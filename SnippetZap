@@ -1,0 +1,10 @@
+# Code Snippet for validation in the Zap on Step 3. The Zap was integrated with a Airtable form 
+
+if input_data['aadhar_user'] == input_data['aadhar_system']:
+   if input_data['system_status'] == "VERIFIED":
+       output1 = "Verification successful"
+   else:
+       output1 = "Verification failed"
+else:
+   output1 = "Verification failed"
+output = { "status" : output1}
